@@ -10,11 +10,11 @@ export const App = () => {
   const [bad, setBad] = useState(0);
 
   const handelFeedback = e => {
-    if (e === 'Good') {
+    if (e === 'good') {
       setGood(good + 1);
-    } else if (e === 'Neutral') {
+    } else if (e === 'neutral') {
       setNeutral(neutral + 1);
-    } else if (e === 'Bad') {
+    } else if (e === 'bad') {
       setBad(bad + 1);
     }
   };
@@ -35,7 +35,7 @@ export const App = () => {
       <Section title="Please leave feedback">
         <Feedback
           handelFeedback={handelFeedback}
-          options={['Good', 'Neutral', 'Bad']}
+          options={['good', 'neutral', 'bad']}
         />
       </Section>
 
